@@ -1,0 +1,5 @@
+# Techvora Academy — 20-Hour C Master Classes
+User-agent: *
+Allow: /
+
+# No private or administrative endpoints exist on this static site.

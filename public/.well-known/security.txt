@@ -1,0 +1,7 @@
+# Security contact for Techvora Academy (RFC 9116)
+# We welcome good-faith, responsible security research.
+# Placeholder contact — replace with the production security mailbox before launch.
+Contact: mailto:hello@techvora.academy
+Expires: 2027-01-31T00:00:00.000Z
+Preferred-Languages: en
+Comments: Please do not access, modify or exfiltrate data that is not yours; do not degrade service availability; give us reasonable time to respond before public disclosure.

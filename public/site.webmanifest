@@ -1,0 +1,13 @@
+{
+  "name": "Techvora Academy — 20-Hour C Master Classes",
+  "short_name": "Techvora",
+  "description": "A focused 20-hour programming experience designed to build strong C fundamentals, logical thinking and practical coding skills.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#060503",
+  "theme_color": "#060503",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

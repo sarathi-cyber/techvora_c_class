@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#060503" />
+
+    <!--
+      ────────────────────────────────────────────────────────────────────────
+      SECURITY — Content Security Policy (defense in depth)
+      ────────────────────────────────────────────────────────────────────────
+      • script-src is locked to per-script SHA-256 hashes injected at build
+        time (see scripts/verify-csp.mjs). No 'unsafe-inline' for scripts.
+      • style-src allows 'unsafe-inline' because this is a single-file build
+        (styles are bundled) — style injection is a low-risk vector and
+        script execution remains strictly controlled.
+      • An additional baseline CSP with frame-ancestors 'none' is delivered
+        via HTTP response headers (see public/_headers, vercel.json) on
+        supporting platforms; frame-ancestors is ignored inside <meta>.
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'sha256-sIHEEY2d7/G/hFYIFlXY/0mg5kqOeQC5XZVE9EN4wVo=' 'sha256-cyOMTVissNXEcBoeJlS9emlCcSDFRRbqCCdQSPO23po='; style-src 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; manifest-src 'self'"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Self-hosted display fonts used above the fold -->
+    <link rel="preload" href="/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/jetbrains-mono-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+
+    <!-- Primary metadata -->
+    <title>Techvora Academy — 20-Hour C Master Classes</title>
+    <meta
+      name="description"
+      content="Techvora Academy proudly presents the 20-Hour C Master Classes — a focused programming experience designed to build strong C fundamentals, logical thinking and practical coding skills."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Techvora Academy" />
+    <!-- Canonical URL placeholder — replace with the production domain before launch -->
+    <link rel="canonical" href="https://techvora.academy/" />
+
+    <!-- Open Graph (WhatsApp, Facebook, LinkedIn, Instagram DMs) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Techvora Academy" />
+    <meta property="og:url" content="https://techvora.academy/" />
+    <meta property="og:title" content="Techvora Academy — 20-Hour C Master Classes" />
+    <meta
+      property="og:description"
+      content="Master the fundamentals. Strengthen your logic. Start coding with confidence. A focused 20-hour C programming experience — practical and beginner friendly."
+    />
+    <meta property="og:image" content="https://techvora.academy/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Techvora Academy — 20-Hour C Master Classes. Black and gold cinematic banner."
+    />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Techvora Academy — 20-Hour C Master Classes" />
+    <meta
+      name="twitter:description"
+      content="Master the fundamentals. Strengthen your logic. Start coding with confidence. A focused 20-hour C programming experience."
+    />
+    <meta name="twitter:image" content="https://techvora.academy/og-image.jpg" />
+
+    <!-- Icons / manifest -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!--
+      Structured data (schema.org Course). Static, no user data.
+      Its CSP hash is injected at build time alongside the app bundle hash.
+    -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Course","name":"20-Hour C Master Classes","description":"A focused 20-hour programming experience designed to build strong C fundamentals, logical thinking and practical coding skills.","provider":{"@type":"Organization","name":"Techvora Academy","sameAs":"https://techvora.academy/"}}</script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <div style="margin:4rem auto;max-width:36rem;padding:0 1.5rem;color:#f4f1e8;background:#060503;font-family:ui-sans-serif,system-ui,sans-serif;text-align:center;">
+        <h1 style="color:#d4af37;letter-spacing:0.08em;">TECHVORA ACADEMY</h1>
+        <p>20-Hour C Master Classes — this experience requires JavaScript to render.</p>
+        <p>Master the fundamentals. Strengthen your logic. Start coding with confidence.</p>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
