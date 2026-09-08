@@ -17,8 +17,8 @@ export const SITE = {
   /** Official Google Form — the single registration channel. */
   registrationUrl: "https://forms.gle/hB9ns37UWA9xSU166",
   /** Canonical origin placeholder — replace before production launch. */
-  origin: "https://techvora.academy",
-  contactEmail: "hello@techvora.academy",
+  origin: "https://techvoraacademy.in",
+  contactEmail: "hello@techvoraacademy.in",
 } as const;
 
 /** Runtime guard: never allow non-HTTPS registration destinations. */
